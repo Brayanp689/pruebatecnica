@@ -4,21 +4,18 @@ import { Button } from "./ContentButton";
 
 const DataUser = Object.values(DataUserObj)[0];
 
-const Content2 = () => {
+const Content3 = () => {
     function handleSubmit(e) {
         e.preventDefault();
-        <>
-        <p >{(`Number of users in module 2: ${(DataUser["authz.provider_2"])}`)}</p>
-        </>
+        console.log((`Number of users in module 2: ${(DataUser["authz.provider_2"])}`))
+
       }
     return(
         <>
-        <Button className="button" onClick={handleSubmit}>
-            Module 2
+        <Button onClick={handleSubmit}>
+            Module 3
         </Button>
-        <p >{(`Number of users in module 2: ${(DataUser["authz.provider_2"])}`)}</p>
-
-        </>
+         </>
     );
 }
-export default Content2
+export default Content3

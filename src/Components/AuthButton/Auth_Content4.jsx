@@ -6,15 +6,14 @@ const DataUser = Object.values(DataUserObj)[1];
 const Auth_Content4 = () => {
     function handleSubmit(e) {
         e.preventDefault();
+        console.log((`Number of users in module 1: ${(DataUser["authn.provider_1"])}`))
       }
     return(
         <>
-        <Button id ="Module 1"onClick={handleSubmit}>
+        <Button onClick={handleSubmit}>
             Module 4
         </Button>
-        
-        <p>{(`Number of users in module 4 ${(DataUser["authn.provider_4"])}`)}</p>
-        </>
+         </>
 
         
     );

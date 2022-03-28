@@ -6,7 +6,6 @@ import Content3 from "./Content3";
 import Content4 from "./Content4";
 
 export const Button = styled.button`
-
   color: white;
   padding: 1px 10px;
   border-radius: 10px;
@@ -17,7 +16,6 @@ export const Button = styled.button`
   transition: ease background-color 250ms ;
   border: 3px;
   margin: 10px 5px;
-
 `
 
 export const ButtonToggle = styled(Button)`
@@ -50,4 +48,3 @@ const ContentButton = () => {
     );
 }
 export default ContentButton
-
